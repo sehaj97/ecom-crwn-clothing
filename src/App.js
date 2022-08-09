@@ -1,9 +1,16 @@
-import CategoryDirectory from "./components/category-directory/category-directory.component";
-
-import categories from "./utils/categories.json";
-
+import { Routes, Route } from "react-router-dom";
+import Home from "./routes/home/home.component";
+function Shop() {
+  return <h1>I am shop</h1>;
+}
 function App() {
-  return <CategoryDirectory categories={categories} />;
+  return (
+    <Routes>
+      <Route path="/home" element={<Home />}>
+        <Route path="shop" element={<Shop />} />
+      </Route>
+    </Routes>
+  );
 }
 
 export default App;
