@@ -6,8 +6,8 @@ import categories from "../../utils/categories.json";
 function Home() {
   return (
     <div>
-      <Outlet />
       <CategoryDirectory categories={categories} />
+      <Outlet />
     </div>
   );
 }
