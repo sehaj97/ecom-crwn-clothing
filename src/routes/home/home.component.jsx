@@ -7,7 +7,6 @@ function Home() {
   return (
     <div>
       <CategoryDirectory categories={categories} />
-      <Outlet />
     </div>
   );
 }
